@@ -2,6 +2,7 @@
     font-family: 'chunkfiveroman';
     src: url('chunkfive-webfont.eot');
     src: url('chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chunkfive-webfont.woff2') format('woff2'),
          url('chunkfive-webfont.woff') format('woff'),
          url('chunkfive-webfont.ttf') format('truetype'),
          url('chunkfive-webfont.svg#chunkfiveroman') format('svg');
