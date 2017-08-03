@@ -32,6 +32,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+gem 'simple_form'
+
 gem 'kaminari'
 
 source "https://rails-assets.org" do
