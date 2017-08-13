@@ -1,13 +1,16 @@
-<div class="booyah-box col-10 offset-1">
-    <%= image_tag photo.picture %>
-    <%= photo.caption %>
-</div>
-
 <% @places.each do |place| %>
     <div class="booyah-box col-10 offset-1">
         <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
         <p><%= place.description %></p><br />
+        
+        <div class="col-10 offset-1 ">
+          <% if place.photos.present? %>
+            
+            <%= image_tag place.photos.last.picture, :class => 'img-fluid index-image' %>
+              
+          <% end %>
+        </div>
         
         <% if place.user.present? %>
             <small><%= place.user.email %></small>
