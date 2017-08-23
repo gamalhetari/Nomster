@@ -68,7 +68,7 @@
   </div>
 </div>
 
-<div class="col-10 offest-1">
+<div class="col-10 offset-1">
   <h1 class="float-left">Photos</h1>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myPhotoModal">
@@ -80,7 +80,7 @@
 
 <% @place.photos.each do |photo| %>
   <div class="booyah-box col-10 offset-1">
-    <%= image_tag photo.picture %>
+    <%= image_tag photo.picture, class: "place-photo" %>
     <br/ >
     <%= photo.caption %>
   </div>
@@ -112,7 +112,7 @@
   </div>
 </div>
 
-<div class="col-10 offest-1">
+<div class="col-10 offset-1">
   <h1 class="float-left">Comments</h1>
   <!-- Button trigger modal -->
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myCommentModal">
